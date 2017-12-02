@@ -1,0 +1,140 @@
+@charset "utf-8";
+.titt{
+	width: 480px;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #E0E2EB;
+	.tit{
+		width: 120px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #F8F8F7;
+		font-size: 20px;
+		border-right: 1px solid #E0E2EB;
+	}
+	.tit:nth-of-type(4){
+		border: 0;
+	}
+	.tit:hover{
+		border-top: 4px solid #FC7800;
+		background: white;
+		font-weight: bold;
+	}
+}
+.ww{
+	width:480px;
+	height: 440px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	display: none;
+	border: 2px solid #E0E2EB;
+	.ww-3{
+		width: 98%;
+		height: 96%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.ww-2{
+			width: 440px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			display: none;
+			img{
+				width: 96%;
+				height: 85%;
+				margin-bottom: 8px;
+			}
+			p{
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p:nth-of-type(2){
+				width: 96%;
+				font-size: 16px;
+				margin-top:20px ;
+				font-weight: bold;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				sapn{
+					font-size: 21px;
+					color: #FA4116;
+				}
+			}
+		}
+		.ww-7{
+			width: 440px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			display: none;
+			img{
+				width: 96%;
+				height: 85%;
+				margin-bottom: 8px;
+			}
+			p{
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p:nth-of-type(2){
+				width: 96%;
+				font-size: 16px;
+				margin-top:20px ;
+				font-weight: bold;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				sapn{
+					font-size: 21px;
+					color: #FA4116;
+				}
+			}
+		}
+	}
+	.www{
+		width: 90px;
+		height: 96%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.ww-1{
+			width: 80px;
+			height: 80px;
+			
+			opacity: 0.5;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.ww-1:hover{
+			opacity: 0.3;
+		}
+		.ww-6{
+			width: 60px;
+			height: 60px;
+			background: gainsboro;
+			border-radius: 50%;
+			margin-bottom: 5px;
+			font-size: 20px;
+			color: gray;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.ww-6:hover{
+			color: white;
+			background:#FC7800;
+		}
+	}
+}

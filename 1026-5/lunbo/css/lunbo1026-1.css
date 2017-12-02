@@ -1,0 +1,92 @@
+#box{
+	width: 700px;
+	height: 697px;
+	border: 1px solid black;
+}
+.top{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.top .p{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	line-height: 110px;
+	font-size: 35px;
+	border: 1px solid grey;
+}
+.bottom{
+	width: 100%;
+	height: 587px;
+	overflow: hidden;
+}
+.bottom1{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+/****** left  *******/
+.left{
+	width: 580px;
+	height: 584px;
+	overflow: hidden;
+}
+.left1{
+	width: 100%;
+	height: 100%;
+	
+}
+.left1 .left1-img{
+	width:570px;
+	height: 433px;
+	margin: 10px 8px;
+}
+.left1 .left-wen{
+	width:570px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 32px;
+}
+.left1 .left-wen div:nth-child(1){
+	margin-bottom: 36px;
+}
+.left1 .left-wen div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left1 .left-wen div span{
+	padding:0 10px;
+}
+.left1 .left-wen div span:nth-child(1){
+	font-size: 38px;
+	color: red;
+}
+.left1 .left-wen div span:nth-child(2){
+	font-size: 30px;
+}
+
+/************* right  *************/
+.right{
+	width: 120px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+}
+.right .right1{
+	width: 106px;
+	height: 106px;
+}
+.right .right1 .right-img{
+	width: 106px;
+	height: 106px;
+	opacity: 0.5;
+}

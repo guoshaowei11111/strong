@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/1026-8.css"/>
+	</head>
+	<body id="by">
+<div id="iframe-wrap">
+
+		    <iframe id="iframe" src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201512/jiaoben3893/" frameborder="0" width="100%" height="261px"> </iframe>
+          
+
+
+</div>
+
+	<script type="text/javascript">
+
+	    var description = 'html5支持手机触屏幻灯片代码: html5支持手机触屏幻灯片代码是一款jQuery+html5实现的兼容电脑PC手机触屏幻灯片图片轮播代码。';
+
+
+
+	    var sendT = {
+	        getHeader: function () {
+	            var g_title = description;
+	            var re = /<[^<>]*?font[^<>]*?>/gi;
+	            g_title = g_title.replace(re, "");
+	            return g_title;
+	        },
+	        getFirstImgSrc: function () {
+	            var allPageTags = document.getElementsByTagName("div");
+	            for (var i = 0; i < allPageTags.length; i++) {
+	                if (allPageTags[i].className == 'downtext') {
+	                    if (allPageTags[i].getElementsByTagName("img")[0] && allPageTags[i].getElementsByTagName("img")[0].width > 200) {
+	                        return allPageTags[i].getElementsByTagName("img")[0].src;
+	                    }
+	                    else {
+	                        return null;
+	                    }
+
+	                }
+	            }
+	        },
+	        getContent: function () {
+	            var allPageTagss = document.getElementsByTagName("div");
+	            for (var i = 0; i < allPageTagss.length; i++) {
+	                if (allPageTagss[i].className == 'downtext') {
+	                    return allPageTagss[i].innerHTML;
+	                }
+	            }
+	        }
+	    }
+
+
+
+	    document.getElementById("fxwb").onclick = function () {
+	        (function (s, d, e, r, l, p, t, z, c) {
+	            var f = 'http://service.weibo.com/share/share.php?appkey=872996044&', u = z || d.location, p = ['url=', e(u), '&title=', e(sendT.getHeader()), '&source=', e(r), '&sourceUrl=', e(l), '&content=', c || 'gb2312', '&pic=', e(p || '')].join('');
+	            function a() {
+	                if (!window.open([f, p].join(''), 'mb', ['toolbar=0,status=0,resizable=1,width=440,height=430,left=', (s.width - 440) / 2, ',top=', (s.height - 430) / 2].join(''))) u.href = [f, p].join('');
+	            };
+	            if (/Firefox/.test(navigator.userAgent)) setTimeout(a, 0); else a();
+	        })(screen, document, encodeURIComponent, 'CHINAZ', 'http://sc.chinaz.com/', sendT.getFirstImgSrc(), null, null, null);
+	    }
+
+
+	    function posttoWb() {
+	        var _tt = description;
+	        var _t = encodeURI(_tt.replace(/\s+$/, ''));
+	        var _url = encodeURI(window.location);
+	        var _appkey = encodeURI("258efff116d2466da9b7513cbae7de0b");
+	        var _site = encodeURI('sc.chinaz.com');
+	        var _pic = sendT.getFirstImgSrc();
+	        var _u = 'http://v.t.qq.com/share/share.php?title=' + _t + '&url=' + _url + '&appkey=' + _appkey + '&site=' + _site + '&pic=' + _pic;
+	        window.open(_u, '转播到腾讯微博', 'width=700, height=580, top=320, left=180, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no');
+	    }
+
+ 
+</script>
+<script type="text/javascript" src="/js/softinfo.js.aspx?id=523088" defer="defer" charset="UTF-8"></script>
+
+
+</html>

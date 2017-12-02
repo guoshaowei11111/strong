@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+	</head>
+	<body>
+		<div class="tu">
+			<img src="img/02.png" />
+		</div>
+		<div id="view">
+			<ul>
+				<li>
+					<div class="swiper-slide">
+						<p class="p1-1">商业网站“标题党”</p>
+						<p class="p1-2"><b>举报入口</b></p>
+					</div>
+				</li>
+				<li>
+					<div class="swiper-slide">
+						<p class="p1-3">暴恐音视频举报专区</p>
+						<p class="p1-4">互联网违法和不良信息举报中心</p>
+					</div>
+
+				</li>
+				<li>
+					<div class="swiper-slide">
+						<p class="p1-5">
+							网络举报APP下载
+							<img src="img/01.png" />
+						</p>
+						<p class="p1-6">
+							<span>清朗网络空间</span>
+							<span>维护网民权益</span>
+						</p>
+					</div>
+
+				</li>
+				<li>
+					<div class="swiper-slide">
+						<p class="p1-1">网上有害信息</p>
+						<p class="p1-2"><b>举报专区</b></p>
+					</div>
+				</li>
+
+				<li>
+					<div class="swiper-slide">
+						<p class="p1-1">商业网站“标题党”</p>
+						<p class="p1-2"><b>举报入口</b></p>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="er">
+			<table>
+				<tr>
+					<td><b>微博</b></td>
+					<td>城市</td>
+					<td>鲜城</td>
+					<td>上海</td>
+				</tr>
+				<tr>
+					<td><b>旅游</b></td>
+					<td>航空</td>
+					<td>彩票</td>
+					<td>高尔夫</td>
+				</tr>
+				<tr>
+					<td><b>游戏</b></td>
+					<td>手游</td>
+					<td>邮箱</td>
+					<td>English</td>
+				</tr>
+			</table>
+			<div class="div">
+				<p>交易</p>
+				<p>理财</p>
+				<p>更多
+					<font color="orangered">v</font>
+				</p>
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				var timer = setInterval(top, 1000);
+				
+				function top() {
+					if ($("ul").offset().top <= -200) {
+						$("ul").css("top", "0");
+					}
+					$("ul").stop(true, true).animate({top: "-=50px"}, 300);
+				};
+				
+			});
+		</script>
+	</body>
+
+</html>
